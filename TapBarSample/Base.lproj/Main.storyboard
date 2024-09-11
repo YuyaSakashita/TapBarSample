@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hYM-XS-pko">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="wWa-O0-t29">
+            <objects>
+                <viewController id="pQk-V2-vR4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OmW-YS-nC8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="afF-7y-AQz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="tL7-62-j4b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-1M-qGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="320"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="PQh-jL-jGP">
+            <objects>
+                <viewController id="r0d-WL-p0y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Z4-AH-bta">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dkM-FR-n7P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Uos-Vk-jlS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WB-Cq-xhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="1009"/>
+        </scene>
+        <!--世界時計-->
+        <scene sceneID="MJO-0M-bYY">
+            <objects>
+                <viewController id="OoM-oR-Ryk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wEH-fp-Gqg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Go-zP-tXK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="世界時計" image="globe.americas" catalog="system" id="Jya-qE-gOA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eh-uZ-Th1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="-286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YgJ-xU-2qk">
+            <objects>
+                <tabBarController id="hYM-XS-pko" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9m5-0j-rn4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4io-H5-Wo5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OoM-oR-Ryk" kind="relationship" relationship="viewControllers" id="nzO-pu-UiW"/>
+                        <segue destination="pQk-V2-vR4" kind="relationship" relationship="viewControllers" id="fxD-zb-IjD"/>
+                        <segue destination="r0d-WL-p0y" kind="relationship" relationship="viewControllers" id="pJN-nJ-gYi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqy-FS-O3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe.americas" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
